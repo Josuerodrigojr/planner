@@ -7,8 +7,6 @@ import { prisma } from '../lib/prisma'
 import { getMailClient } from '../lib/mail'
 import { dayjs } from '../lib/dayjs'
 
-
-
 export async function createTrip(app: FastifyInstance) {
   app.withTypeProvider<ZodTypeProvider>().post(
     '/trips',
